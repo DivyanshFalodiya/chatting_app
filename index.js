@@ -1,5 +1,6 @@
 // Set up environments
 require('dotenv').config();
+require('./config/dbConfig');
 
 // Set up imports
 const path = require('path');
@@ -13,7 +14,7 @@ const authController = require('./controllers/AuthController');
 const app = express();
 
 // Set up middlewares
-app.use(express.static(path.resolve(__dirname, './client/build')));
+// app.use(express.static(path.resolve(__dirname, './client/build')));
 app.use(express.json());
 
 // Set up routes
@@ -21,9 +22,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('hello');
 });
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
+// });
 
 // Set up io
 const server = http.createServer(app);
