@@ -5,11 +5,15 @@ const ChatSchema = mongoose.Schema({
     people: [String], //  participants
     messages: [
         {
-            sender: { String }, //  Username
-            content: { String },
-        },
-        {
-            timestamps: true,
+            type: new mongoose.Schema(
+                {
+                    sender: { String },
+                    content: { String },
+                },
+                {
+                    timestamps: true,
+                }
+            ),
         },
     ],
 });
