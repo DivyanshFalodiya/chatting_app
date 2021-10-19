@@ -1,6 +1,6 @@
 .LoginSignUp{
     height: 100vh;
-    background: linear-gradient(to bottom, #007480, #00BEBA);
+    background: linear-gradient(to bottom, #ffffff, #000000);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Header{
@@ -20,8 +20,8 @@
     padding: 0 50px 50px 50px;
     display: inline-block;
     border-radius: 10px;
-    background-color: #283758;
-    box-shadow: 0 0 5px #060c36;
+    background-color: #dd4d4d;
+    box-shadow: 0 0 5px #2738b8;
 
     /* border: 2px solid #0f1a61; */
 }
@@ -42,7 +42,7 @@
     font-size: 1.3rem;
     padding: 10px 20px;
     text-transform: uppercase;
-    background-color: #2FFAE7;
+    background-color: #41e600;
     position: relative;
     top: -10px;
 }
@@ -56,7 +56,7 @@
 }
 .field input{
     width: 300px;
-    background-color: #4F5875;
+    background-color: #67b67b;
     padding: 10px 20px;
     outline: none;
     border: none;
