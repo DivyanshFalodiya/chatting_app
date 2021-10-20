@@ -19,8 +19,14 @@ const Profile = (props) =>{
         <div className={classes.Profile}>
             {/* <Logout/>
             <Settingss/> */}
+
+            <div className={classes.Name}>Chatting_app</div>
+            
+            <hr></hr>
             <UserProfile userData={props.userData}/>
+            <hr></hr>
             <Messages logoutHandler={props.logoutHandler} changeShowOption={changeShowOptionHandler}/>
+            
         </div>
     )
 }

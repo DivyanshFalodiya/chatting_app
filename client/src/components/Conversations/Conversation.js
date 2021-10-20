@@ -352,17 +352,17 @@ const Conversation = (props) => {
 
   return (
     <div className={classes.Conversation}>
-      <div className={classes.Heading}>Conversations</div>
+      <div className={classes.Heading}>All Conversations</div>
       {/* Search */}
       <div className={classes.search}>
-        <input type="text" placeholder="Search"></input>
+        <input type="text" placeholder="Type to search..."></input>
       </div>
       <div className={classes.opt}>
         <div onClick={recentChatHandler} className={classes.recent}>
-          Recent Chats
+          Recent
         </div>
         <div onClick={newChatHandler} className={classes.new}>
-          + New Chat
+          New Message
         </div>
       </div>
       {/* <Chats friendData={{imageUrl: "", name: "Bill Gates", lastMessage: "hi"}}/> */}

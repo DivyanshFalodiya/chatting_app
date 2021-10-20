@@ -107,6 +107,7 @@ const LoginSignUp = (props) => {
                             <p className={classes.Text}>SignUp</p>
                         </div>
                         <form>
+                            <div className={classes.horizontal}>
                             <div className={classes.field}>
                                 <label>Name</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.name} type="name" name="name" placeholder="Name"/>
@@ -115,6 +116,9 @@ const LoginSignUp = (props) => {
                                 <label>Username</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.username} type="username" name="username" placeholder="Username"/>
                             </div>
+                            </div>
+
+                            <div className={classes.horizontal}>
                             <div className={classes.field}>
                                 <label>Email</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.email} type="email" name="email" placeholder="Email"/>
@@ -124,6 +128,10 @@ const LoginSignUp = (props) => {
                                 <label>Contact</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.contact} type="contact" name="contact" placeholder="Phone"/>
                             </div>
+
+                            </div>
+
+                            <div className={classes.horizontal}>
                             <div className={classes.field}>
                                 <label>Set Password</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.setPassword} type="password" name="setPassword" placeholder="Password"/>
@@ -132,6 +140,7 @@ const LoginSignUp = (props) => {
                             <div className={classes.field}>
                                 <label>Confirm Password</label>
                                 <input onChange={onChangeSignupFormHandler} value={signup.confirmPassword} type="password" name="confirmPassword" placeholder="Password"/>
+                            </div>
                             </div>
                             <button onClick={signupSubmitHandler} className={classes.Button}>Sign Up</button>
                         </form>

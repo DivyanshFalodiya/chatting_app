@@ -12,12 +12,15 @@ const Message = (props) => {
     if(props.type === "received"){
         style = {
             borderTopLeftRadius: "0",
-            backgroundColor: "#2438ae",
+            backgroundColor: "#1E2933",
+            color: "#fff",
+            
         }
     }else if(props.type === "send"){
         style = {
             borderTopRightRadius: "0",
-            backgroundColor: "#17275f",
+            backgroundColor: "#EAEFF4",
+            color: "#000",
         }
         liStyle={
             justifyContent: "flex-end",

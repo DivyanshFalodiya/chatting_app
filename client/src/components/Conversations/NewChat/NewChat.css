@@ -2,14 +2,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     /* height: 100vh; */
-    background-color: #091143;  
+    background-color: #fdfdfd;  
     color: #fff;
     display: flex;
     padding: 10px;
+    
+    border-radius: 10px;
     justify-content: center;
 }
 .NewChat:hover{
-    background-color: #000e68;
+    background-color: #F6F9FF;
 }
 .Active{
     background-color: #081ca4;
@@ -29,7 +31,7 @@
     flex-direction: column;
     margin-left: 20px;
     /* margin-right: 100px; */
-    color: #fff;
+    color: #000;
     width: 100vh;
     flex-wrap: nowrap;
 }
@@ -52,9 +54,10 @@
     align-items: center;
 }
 .Send{
-    color: #2d41cc;
+    color: #E02401;
     border-radius: 10px;
     border: none;
+    margin-right: 10px;
     user-select: none;
     cursor: pointer;
 }

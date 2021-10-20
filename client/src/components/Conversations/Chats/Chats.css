@@ -2,21 +2,24 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     /* height: 100vh; */
-    background-color: #091143;  
+    background-color: #fdfdfd;  
     color: #fff;
     display: flex;
     padding: 10px;
+    padding-bottom: 15px;
+    border-radius: 5px;
     justify-content: center;
     user-select: none;
 }
 .Chats:hover{
-    background-color: #000e68;
+    background-color: #F6F9FF;
 }
 .Active{
-    background-color: #081ca4;
+    background-color: #e3ebfc;
+    border-left: 6px solid #464646;
 }
 .Active:hover   {
-    background-color: #081ca4;
+    background-color: #b9efff;
 }
 
 .Profile .Image{
@@ -33,7 +36,7 @@
     flex-direction: column;
     margin-left: 20px;
     /* margin-right: 100px; */
-    color: #fff;
+    color: #000;
     width: 100vh;
     flex-wrap: nowrap;
 }

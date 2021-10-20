@@ -15,8 +15,11 @@ const Messages = (props) =>{
     return (
 
         <div className={classes.Messages}>
+            <h3 className={classes.heading}>Menu</h3>
+
+
             <ul>
-                <li className= {state === "conversation" ? (classes.List+" "+classes.Current) : (classes.List) } onClick={()=>ShowOptions("conversation")}>
+                <li className= {state === "conversation" ? (classes.List+" "+classes.Current) : (classes.List) } onClick={()=>ShowOptions("conversation")}>                 
                     <div className={classes.Option}>
                         Conversations
                     </div>
