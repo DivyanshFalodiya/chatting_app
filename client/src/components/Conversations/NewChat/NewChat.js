@@ -14,18 +14,24 @@ const Chats = (props) =>{
     }
 
     return(
+        <div>
         <div className={classes.NewChat}>
             <div className={classes.Profile}>
                 <div style={ProfileStyle} className={classes.Image}>
                 </div>
             </div>
             <div className={classes.name}>
-                <p style={{ color:"#fff",marginBottom:"15px"}}>{props.friendData.name}</p>
-                <p style={{ color:"#ccc",marginBottom:"15px"}}>{props.friendData.email}</p>
+                <p style={{ color:"#000",marginBottom:"15px"}}>{props.friendData.name}</p>
+                <p style={{ color:"#191A19",marginBottom:"15px"}}>{props.friendData.email}</p>
             </div>
             <div>
                 <p onClick={requestHandler} className={classes.Send}>Request</p>
             </div>
+            
+        
+        </div>
+
+        <hr></hr>
         </div>
     )
 }

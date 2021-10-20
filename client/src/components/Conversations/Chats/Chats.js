@@ -19,13 +19,15 @@ const Chats = (props) =>{
     }
 
     return(
+
+        <div>
         <div onClick={()=>{props.conversationActive && props.conversationActive(props.friendData.uid, props.friendData.conversationUID)}} className={ (props.isActive === props.friendData.uid) ? (classes.Chats +" "+ classes.Active) : classes.Chats} >
             <div className={classes.Profile}>
                 <div style={ProfileStyle} className={classes.Image}>
                 </div>
             </div>
             <div className={classes.name}>
-                <p style={{ color:"#fff",marginBottom:"15px"}}>{props.friendData.name}</p>
+                <p style={{ color:"#000",marginBottom:"15px"}}>{props.friendData.name}</p>
                 {(!props.pending && !props.requested) ? <p className={classes.lastMessage}>{props.friendData.lastmsg}</p> : <p style={{ color:"#c5c5c5"}}> {props.friendData.email}</p>}
 
             </div>
@@ -40,6 +42,10 @@ const Chats = (props) =>{
                         </div>)
                     )
             )}
+
+        </div>
+
+        <hr></hr>
 
         </div>
     )

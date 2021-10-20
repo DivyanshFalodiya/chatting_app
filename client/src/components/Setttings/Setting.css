@@ -2,7 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 100vh;
-    background-color: #091143;  
+    background-color: #faffff;  
     color: #fff;
     display: flex;
     flex-flow: column;
@@ -13,6 +13,8 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
 }
 
 .Heading1 {
@@ -25,7 +27,7 @@
 .Heading2 {
     margin: 20px;
     font-size: 1rem;
-    color: #4156e3;
+    color: #fafbff;
 }
 
 .Profile .Image{
@@ -42,7 +44,10 @@
     flex-direction: column;
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #021959;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #1E2933;
 }
 
 .Name_Section{
@@ -63,7 +68,7 @@
 }
 .text{
     text-align: center;
-    color: #4474e0;
+    color: #1E2933;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -71,8 +76,12 @@
 .about{
     display: flex;
     flex-direction: column;
-    background-color: #021959;
+    background-color: #1E2933;
     margin-bottom: 20px;
+    
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
     margin-top: 20px;
 }
 .form{
@@ -80,6 +89,8 @@
     font-size: 1.1rem;
     outline: none;
     border: none;
-    background-color: #192760;
-    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #fff8f8;
+    color: rgb(31, 31, 31);
 }

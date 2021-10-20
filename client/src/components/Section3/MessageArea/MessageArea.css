@@ -3,6 +3,9 @@
     overflow-y: scroll;
     padding: 0 10px;
     margin-right: -20px;
+    
+    background-color: #F8FAFD;
+    
 }
 .Init{
     height: 100%;
@@ -10,8 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #081ca4;
+    color: #1E2933;
 }
 .MessageArea div{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+} 

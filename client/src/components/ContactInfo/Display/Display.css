@@ -6,6 +6,9 @@
 }
 .Display .Heading{
     padding: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #1E2933;
 }
 .Profile .Image{
     margin: auto;
@@ -16,7 +19,9 @@
 }
 .Name{
     padding: 10px 0;
-    font-weight: 600;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1E2933;
 }
 .Place{
     padding: 0 0 5px 0;
