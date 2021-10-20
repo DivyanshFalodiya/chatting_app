@@ -9,6 +9,6 @@ mongoose.connection.on('open', () => {
     console.log('Connected to DB!');
 });
 
-const db = mongoose.connect(`http://127.0.0.1:27017/chatapp`);
+const db = mongoose.connect(`mongodb://localhost:27017/chatapp`);
 
 module.exports = db;
