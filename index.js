@@ -34,8 +34,17 @@ const io = new socketio.Server(server);
 io.of('/chat').use(authController.isAuthenticated);
 
 // IO code
-io.of('/chat').on('connect', (socket) => {
+io.of('/chat').on('connect', async (socket) => {
     console.log(`User connected : ${socket.id}`);
+
+    const activeUsers = [];
+    io.of('/chat').sockets.forEach(({ id, socket }) => {
+        if (socket.email in socket.friends.map((f) => f.email))
+            activeUsers.push({
+                id,
+                email: socket.email,
+            });
+    });
 
     socket.on('disconnect', () => {
         console.log(`User disconnected : ${socket.id}`);
