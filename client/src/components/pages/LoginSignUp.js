@@ -96,8 +96,9 @@ const LoginSignUp = (props) => {
                         <div className={classes.checkLink}>
                             Forget Password
                         </div>
-
-                        <button className={classes.Button} onClick={loginSubmitHandler}>Login</button>
+                        <div className={classes.Buttonwrap}>
+                            <button className={classes.Button} onClick={loginSubmitHandler}>Login</button>
+                        </div>
                     </form>
                     <p className={classes.toggle} onClick={formTogglerHandler}>Dont have account? Register Now</p>
                 </div>) : 
@@ -108,41 +109,42 @@ const LoginSignUp = (props) => {
                         </div>
                         <form>
                             <div className={classes.horizontal}>
-                            <div className={classes.field}>
-                                <label>Name</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.name} type="name" name="name" placeholder="Name"/>
-                            </div>
-                            <div className={classes.field}>
-                                <label>Username</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.username} type="username" name="username" placeholder="Username"/>
-                            </div>
-                            </div>
-
-                            <div className={classes.horizontal}>
-                            <div className={classes.field}>
-                                <label>Email</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.email} type="email" name="email" placeholder="Email"/>
-                                <p className={classes.errorMessage}>{emError}</p>
-                            </div>
-                            <div className={classes.field}>
-                                <label>Contact</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.contact} type="contact" name="contact" placeholder="Phone"/>
-                            </div>
-
+                                <div className={classes.field}>
+                                    <label>Name</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.name} type="name" name="name" placeholder="Name"/>
+                                </div>
+                                <div className={classes.field}>
+                                    <label>Username</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.username} type="username" name="username" placeholder="Username"/>
+                                </div>
                             </div>
 
                             <div className={classes.horizontal}>
-                            <div className={classes.field}>
-                                <label>Set Password</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.setPassword} type="password" name="setPassword" placeholder="Password"/>
-                                <p className={classes.errorMessage}>{pwError}</p>
+                                <div className={classes.field}>
+                                    <label>Email</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.email} type="email" name="email" placeholder="Email"/>
+                                    <p className={classes.errorMessage}>{emError}</p>
+                                </div>
+                                <div className={classes.field}>
+                                    <label>Contact</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.contact} type="contact" name="contact" placeholder="Phone"/>
+                                </div>
                             </div>
-                            <div className={classes.field}>
-                                <label>Confirm Password</label>
-                                <input onChange={onChangeSignupFormHandler} value={signup.confirmPassword} type="password" name="confirmPassword" placeholder="Password"/>
+
+                            <div className={classes.horizontal}>
+                                <div className={classes.field}>
+                                    <label>Set Password</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.setPassword} type="password" name="setPassword" placeholder="Password"/>
+                                    <p className={classes.errorMessage}>{pwError}</p>
+                                </div>
+                                <div className={classes.field}>
+                                    <label>Confirm Password</label>
+                                    <input onChange={onChangeSignupFormHandler} value={signup.confirmPassword} type="password" name="confirmPassword" placeholder="Password"/>
+                                </div>
                             </div>
+                            <div className={classes.Buttonwrap}>
+                                <button onClick={signupSubmitHandler} className={classes.Button}>Sign Up</button>
                             </div>
-                            <button onClick={signupSubmitHandler} className={classes.Button}>Sign Up</button>
                         </form>
                         <p className={classes.toggle} onClick={formTogglerHandler}>Already have an account!</p>
                     </div>)
