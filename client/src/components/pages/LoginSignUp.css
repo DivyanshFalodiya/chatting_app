@@ -1,6 +1,5 @@
 .LoginSignUp{
-    height: 100vh;
-    
+    min-height: 100vh;
     background: linear-gradient( #DBD8E3, #5C5470);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -24,20 +23,17 @@
     /* background-color: #3D0000; */
     background-color: #2A2438;
     box-shadow: 0 0 10px #000000;
-
     /* border: 2px solid #0f1a61; */
 }
 .Head{
     text-align: center;
-    
 }
 .checkLink{
-    width: 100%;
     display: flex;
+    justify-content: flex-end;
     color: #DBDBE3;
     margin: 10px 0 0 0;
-    position: relative;
-    left: 179px;
+    padding: 0 0px 0px 50px;
     cursor: pointer;
 }
 .Text{
@@ -83,14 +79,22 @@
     color: #cf6c6c;
     width: 300px;
 }
+
+.Buttonwrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .Button{
     padding: 10px 20px;
-    background-color: #DBD8E3;
-    
     width: 100%;
+    background-color: #DBD8E3;
+    /* width: 100%; */
     border: none;
-    border-radius: 5px;
-    margin-top: 60px;
+    border-radius: 10px;
+    margin-top: 50px;
     box-shadow: 0 0 5px #060c36;
     outline: none;
     color: rgb(3, 3, 3);
@@ -118,6 +122,66 @@
     display: inline-block;
     display: flex;
     flex-direction: row;
-    
-    
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 375px) {
+    .LoginContainer{
+        padding: 0 0px 50px 0px;
+    }
+    .field label{
+        margin-left: 30px;
+    }
+    .field input{
+        width: 240px;
+        padding: 8px 20px;
+        margin: auto;
+    }
+    .Button{
+        width: 80%;
+    }
+    .checkLink{
+        padding: 0px 35px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 405px) {
+    .LoginContainer{
+        padding: 0 10px 50px 10px;
+    }
+    .field label{
+        margin-left: 21px;
+    }
+    .field input{
+        width: 260px;
+        padding: 8px 20px;
+        margin: auto;
+    }
+    .Button{
+        width: 85%;
+    }
+    .checkLink{
+        padding: 0px 25px 0px 0px;
+    }
+}
+
+
+@media screen and (min-width: 406px) and (max-width: 460px) {
+    .LoginContainer{
+        padding: 0 25px 50px 25px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .LoginContainer{
+        margin-bottom: 20px;
+    }
+    .Button{
+        margin-top: 38px;
+    }
+    .horizontal{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+    }
 }
